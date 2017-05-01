@@ -4,13 +4,13 @@ const (
 	// DBUser MySQL database username
 	DBUser = "root" //"test" //
 	// DBPassword MySQL database password
-	DBPassword = "root" //"test" //
+	DBPassword = "" //"test" //
 	// DBName database name
 	DBName = "apidb"
 	// DBHost MySQL host server
 	DBHost = "127.0.0.1"
 	// DBPort MySQL port
-	DBPort = "8889"
+	DBPort = "3306"
 )
 
 type result struct {
