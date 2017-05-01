@@ -4,13 +4,13 @@ const (
 	// DBUser MySQL database username
 	DBUser = "root" //"test" //
 	// DBPassword MySQL database password
-	DBPassword = "" //"test" //
+	DBPassword = "root" //"test" //
 	// DBName database name
 	DBName = "apidb"
 	// DBHost MySQL host server
-	DBHost = "localhost"
+	DBHost = "127.0.0.1"
 	// DBPort MySQL port
-	DBPort = "3306"
+	DBPort = "8889"
 )
 
 type result struct {
@@ -28,3 +28,6 @@ type user struct {
 	latitude  float64
 	googleacc string
 }
+
+// MyID global id of the user will later be set during login
+var MyID = 0

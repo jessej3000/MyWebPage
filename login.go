@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"net/http"
 )
@@ -29,8 +28,8 @@ func handleLogin(w http.ResponseWriter, r *http.Request) {
 	} else if r.Method == "POST" {
 		r.ParseForm()
 		//Check if username and password are correct
-		result, _ := verifyUser(r.FormValue("username"), r.FormValue("password"))
-		fmt.Println(result)
+		result, id := verifyUser(r.FormValue("username"), r.FormValue("password"))
+		MyID = id
 		if result { // Login if true
 			//Check cookie
 			cookie, err := r.Cookie("logged")
