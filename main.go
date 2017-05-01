@@ -13,5 +13,5 @@ func serveHTTP() {
 	http.HandleFunc("/register", handleRegister)
 	http.HandleFunc("/dashboard", handleDashboard)
 
-	http.ListenAndServe(":1000", nil)
+	http.ListenAndServe("localhost:1000", nil)
 }
